@@ -1,0 +1,28 @@
+#miles _to_kilometers
+
+#one mile = 1610 meters
+#one km = 1000 meters
+#numbers_tests --> 7.38 miles é 11.88 quilometers
+#numbers_tests --> 12.25 quilometers é 7.61 miles
+
+#example_1
+
+value = input("Enter a value in miles 'n convert it to km(s): ")
+value_2 = input("Enter a value in km(s) 'n convert it to miles: ")
+
+miles = float(value) * 1.61
+kilometers = float(value_2) / 1.61
+
+print(f"{value} miles is equal to: ", miles, "kilometers.")
+print(f"{value_2} km is equal to: ", kilometers, "miles.")
+
+#example_2 - using round()
+
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = miles * 1.61
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "milhas é", round(miles_to_kilometers, 2), "quilômetros")
+print(kilometers, "quilômetros é", round(kilometers_to_miles, 2), "milhas")
